@@ -809,6 +809,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32228398a7b35004fbd122ff5704f789, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  promptMessage: Make Bed
+  bed: {fileID: 917758391}
 --- !u!95 &917758393
 Animator:
   serializedVersion: 5

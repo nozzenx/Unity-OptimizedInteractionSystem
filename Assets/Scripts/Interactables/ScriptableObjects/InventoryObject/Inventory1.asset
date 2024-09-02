@@ -12,9 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6196053a993c8498e6b87aa83abf29, type: 3}
   m_Name: Inventory1
   m_EditorClassIdentifier: 
-  keys:
-  - {fileID: 11400000, guid: a720f26e99ee5f04f9a4664e503497cd, type: 2}
-  - {fileID: 11400000, guid: a720f26e99ee5f04f9a4664e503497cd, type: 2}
-  - {fileID: 11400000, guid: a720f26e99ee5f04f9a4664e503497cd, type: 2}
-  - {fileID: 11400000, guid: a720f26e99ee5f04f9a4664e503497cd, type: 2}
-  - {fileID: 11400000, guid: a720f26e99ee5f04f9a4664e503497cd, type: 2}
+  keys: []

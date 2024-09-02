@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Key1
   m_EditorClassIdentifier: 
   keyName: Key1
-  key: {fileID: 0}
+  key: {fileID: 6654978033804928084, guid: e79a14534ea86ac4f888594df5bf17c6, type: 3}

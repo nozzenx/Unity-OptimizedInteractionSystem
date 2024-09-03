@@ -18,6 +18,7 @@ public class FpsPlayerController : MonoBehaviour
     
     private CharacterController charController;
     private Camera cam;
+    private float height;
 
 
     private void Start()
@@ -25,12 +26,14 @@ public class FpsPlayerController : MonoBehaviour
         Cursor.visible = false;
         charController = GetComponent<CharacterController>();        
         cam = Camera.main;
+        height = charController.height;
     }
 
     private void Update()
     {
         HandleMovement();
         HandleRotation();
+        HandleCrouch();
     }
 
     private void HandleMovement()
@@ -52,5 +55,18 @@ public class FpsPlayerController : MonoBehaviour
         verticalSpeed = Mathf.Clamp(verticalSpeed, -upDownRange, upDownRange);
 
         cam.transform.localRotation = Quaternion.Euler(verticalSpeed, 0, 0);
+    }
+
+    private void HandleCrouch()
+    {
+        
+        if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.C))
+        {
+            charController.height /= 2;
+        }
+        else
+        {
+            charController.height = height;
+        }
     }
 }
